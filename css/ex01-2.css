@@ -1,0 +1,66 @@
+#SearchForm {margin: 10px}
+#cc {
+margin-top:10px 0;
+background-color:#f4f4f4;
+font-size:14px;
+padding:5px 10px;
+
+font-weight:700;
+clear:both;
+}
+#cc {color:#F60;}
+#cc a {color:#000;}
+#cc a:hover {color:#F60;}
+.fhui { margin-right:20px;width: 95%;text-align: right;}
+.fhui a:link { color:#F60}
+
+
+.qq {
+background:url(image/qq.gif) no-repeat left center;
+padding-left:65px;
+font-size:12px;
+color:#000;
+height:18px;
+text-decoration:none;
+font-weight:400;
+}
+.pagecontent {
+	zoom:1;
+	clear:both;
+	margin: 5px 0;
+	font-size: 14px;
+	text-align:center;
+	padding:5px 0;
+           font-weight: bold;
+           line-height: 1em;
+           display:block;
+}
+.pagecontent a,.pagecontent span {
+	margin:0 1px;
+	padding:0 4px;
+	border:3px double #fff;
+	
+	background:#eee;
+	color:#C00;
+	text-decoration:none;
+	display:inline;
+	float:left
+	display:inline-block;*display:inline;
+           *zoom:1;
+           vertical-align:top;
+}
+.pagecontent a:hover {
+	background:#f60;
+	
+
+	color:#fff;
+}
+a.currentPageCSS{
+	position:relative;
+	margin:-1px 3px;
+	padding:1px 4px;
+	border:3px double #fff;
+
+	background:#f60;
+	color:#fff;
+}

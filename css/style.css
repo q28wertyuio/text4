@@ -1,0 +1,377 @@
+*{  
+    margin: 0;   /* 外边距0*/
+    padding: 0;  /* 外边距0*/
+
+}
+body{
+    overflow-x: hidden; /* 超出隐藏*/
+}
+a{
+	color:  #224025;  /* 颜色白色*/
+	text-decoration: none;  /* 超出隐藏*/ 
+	font-family: 方正苏新诗柳楷简体;
+}
+ul,li{
+    list-style: none;   /* 超出隐藏*/
+}
+span{
+	color:  #8b4513;
+}
+.min-width{
+	width: 1200px;
+	margin: 0 auto;
+}
+header{
+   width:1600px;
+    height: 450px;
+    overflow: hidden;
+}
+.div{
+	margin:auto;
+	width:300px;
+	float:left;
+}
+/*轮播图start*/
+
+#benner {
+	width:1600px;
+	height:450px;
+}
+#benner .imga {
+	display:none;
+}
+#benner .img {
+	width: 100%;
+	height: 100%
+}
+#benner .img .active {
+	display:block;
+}
+#benner .title {
+	width:101px;
+	height:16px;
+	background-color: black;
+	/*background-color:rgba(226,226,226,0.6);*/
+	border-radius:30px;
+	margin-top:-35px;
+	float:left;
+	margin-left:45%;
+	margin-right:40%;
+	padding:6px 0px 0px 10px;
+	position:relative;
+}
+#benner .title .nr {
+	list-style:none;
+	width:10px;
+	height:10px;
+	background:#fff;
+	border-radius:10px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:0px;
+}
+#benner .title .active {
+	background:#db192a;
+}
+
+.mainMenu{
+            position: absolute;
+            width: 100%;
+            /*background-color: #ff4400;*/
+            color: #8b4513;
+            float: left;
+            height: 70px;
+            text-align: center;
+            align-items: center;
+            margin:auto;
+        }
+        .menu{
+            float: left;
+            line-height: 70px;
+            font-size: 20px;
+            margin-left: 50px;
+            border:0px solid black ;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 方正流行体简体；
+        }
+        .menu:hover{
+            background-color:wheat;
+        }
+         .menu a:hover{
+            color: #8b4513;
+        }
+        
+        #first{  
+            margin-left: 5%;
+        }
+
+.img{
+     width: 100%;
+    height: 580px;
+    margin: 0 auto;
+}
+.img ul{
+    position: relative;
+      width: 100%;
+    height: 100%;
+    
+}
+.img ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.img ul li img{
+   width: 100%;
+   height: 100%;
+}
+.img ul .active{
+    opacity: 1;
+    animation: enlarge 4s linear infinite;  
+}
+@keyframes enlarge{
+    0%{
+        transform: scale(1.15);
+        opacity: 0.8;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(1.25);
+        opacity: 0.6;
+    }
+
+}
+/*关于我们start*/
+nav{
+    width: 100%;
+    height: 260px;
+    text-align: center;
+}
+nav h3,.wrap h3{
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	margin: 0px auto;
+	padding-top: 40px;
+	border-bottom: 5px solid rgb(66,134,117);
+	font-size: 28px;
+	color:rgb(66,134,117);
+	font-family: 叶根友刀锋黑草;
+}
+nav p{
+	width: 1000px;  /*宽度800px*/
+	height: 60px;  /*高度800px*/
+	padding-top: 20px;
+	margin: 0px auto;  /*居中显示*/
+	font-size: 20px;
+	color:#9abeaf;
+	line-height: 46px;
+	font-family:方正苏新诗柳楷简体; 
+}
+/*关于我们end*/
+/*美食详情start*/
+.wrap{
+    width: 100%;
+    height: 800px;
+    background:url(images/b1.jpg) no-repeat;
+}
+.wrap .wrap-uu{
+	width: 1200px;
+	height: 700px;
+	margin: 30px auto;
+}
+.wrap ul li{
+	width: 350px;
+	height: 250px;
+	float: left;
+	margin: 20px;
+	background-color: white;
+ 	text-align: center;
+ 	
+ 	border-radius: 4px;
+}
+.wrap ul li h2{
+	color: rgb(66,134,117);
+	margin-top: 60px;
+	font-family:方正苏新诗柳楷简体; 
+}
+.wrap ul li p{
+	margin-top: 20px;
+	color: #fff;
+	font-family: 方正流行体简体;
+}
+.wrap ul li:hover{
+	background-color: rgb(189,208,1);
+	border:none;
+	color: white;
+	/*border: 1px solid rgb(255,87,34);*/
+}
+/*.wrap ul li:nth-of-type(odd){
+	background: url(images/吊竹梅.jpg) no-repeat;  /*背景图片*/
+/*	background-size: cover;
+}*/
+
+
+
+/*美食详情start*/
+.news{
+    width: 100%;
+    height: 400px;
+  	background: url(images/b4.jpg) no-repeat;  /*背景图片*/
+	background-size: cover;
+}
+.news ul{
+	height: 400px;
+}
+.news ul li{
+	float: left;
+	width: 360px;
+	margin: 20px;
+	text-align: center;
+	font-family: 方正苏新诗柳楷简体;
+}
+.news ul .news-img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border:1px solid rgb(66,134,117);
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.news ul li h4{
+	margin: 10px 0px;
+	font-size: 22px;
+	color: rgb(66,134,117);
+	font-family: 叶根友刀锋黑草;
+}
+.news ul li p{
+	color: black;
+}
+.news ul .news-img img{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;        /*DIV居中*/
+	text-align: center;     /*文本居中*/
+	border-radius: 50%;      /*图片圆形*/
+	transition: .5s ease;    /*执行动画*/
+}
+.news ul .news-img img:hover{
+	transform: scale(1.1);    /*悬停放大*/
+}
+footer{
+	width: 100%;
+	height: 80px;
+	background-color:#fff;
+	text-align:center;
+}
+footer p{
+	text-align: center;
+	color: white;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+
+
+/*小屏幕*/
+
+@media screen and (max-width: 768px) {
+	.wrap {
+		height: 100%;
+	}
+	.wrap .wrap-uu {
+		width: 100%;
+		height: 100%;
+	}
+	.wrap-uu{
+		 display: flex;
+		 flex-direction:column;
+		 align-items: center;
+	}
+	header #benner .img img{
+		width: 768px;
+		height: 100%;
+	}
+	.news ul li {
+		width: 180px;
+	}
+	nav p{
+		width: 768px;
+		font-size: 18px;
+	}
+}
+/*平板*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	
+}
+/*中等屏幕*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+/*大屏幕，或者宽屏*/
+
+@media screen and (min-width: 1200px) {
+	.uu-nav {
+		width: 100%;
+	}
+}
+
+
+
+
+
+/*小屏幕*/
+
+@media screen and (max-width: 768px) {
+	.uu-nav {
+		width: 768px;
+		min-width: 490px;
+		
+	}
+	.nav-lists{
+		display: none;
+	}
+	.nav ul .ico{
+		width: 160px;
+		text-align: right;
+		font-size: 26px;
+		
+	}
+}
+/*平板*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.uu-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav ul .ico{
+		display: none;
+	}
+}
+/*中等屏幕*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.nav ul .ico{
+		display: none;
+	}
+}
+/*大屏幕，或者宽屏*/
+
+@media screen and (min-width: 1200px) {
+	.nav ul .ico{
+		display: none;
+	}
+}
